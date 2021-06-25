@@ -11,9 +11,8 @@ import SwiftUI
 struct PokemonApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+            ContentView()
+                .environmentObject(ViewModel(repository: PokemonRepositoryImpl()))
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

@@ -12,6 +12,7 @@ struct PokemonApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ViewModel(repository: PokemonRepositoryImpl()))
         }
     }
 }
