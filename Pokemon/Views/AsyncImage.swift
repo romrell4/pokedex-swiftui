@@ -31,6 +31,8 @@ struct AsyncImage: View {
         Group {
             if loader.image != nil {
                 image(loader.image!)
+                    .resizable()
+                    .scaledToFill()
             } else {
                 LoadingImage().padding()
             }

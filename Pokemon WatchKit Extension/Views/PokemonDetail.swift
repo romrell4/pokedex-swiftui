@@ -21,9 +21,9 @@ struct PokemonDetail: View {
                         .frame(width: 80, height: 80)
                     Text(pokemon.displayName)
                         .font(.title2)
-                    PokemonDetailRow(label: "Height", value: pokemon.displayHeight)
-                    PokemonDetailRow(label: "Weight", value: pokemon.displayWeight)
-                    PokemonDetailRow(label: "Type", value: pokemon.displayType)
+                    PokemonDetailRow(label: "Height", value: pokemon.displayHeight, font: .caption)
+                    PokemonDetailRow(label: "Weight", value: pokemon.displayWeight, font: .caption)
+                    PokemonDetailRow(label: "Type", value: pokemon.displayType, font: .caption)
                 } else {
                     ProgressView()
                 }
