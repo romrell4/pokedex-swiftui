@@ -5,6 +5,8 @@
 //  Created by Eric Romrell on 6/25/21.
 //
 
+4
+
 import Foundation
 
 struct Pokemon: Codable {
